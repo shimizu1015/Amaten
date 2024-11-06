@@ -107,8 +107,8 @@ export default function Home() {
         <>
           {/* 商品データを渡す */}
 
-          <p>検索商品数：{productData.count}</p>
-          <p>検索ページ数（上限100）：{TotalPage}</p>
+          {/* <p>検索商品数：{productData.count}</p>
+          <p>検索ページ数（上限100）：{TotalPage}</p> */}
           <Products items={productData} />
           {/* ページネーション機能*/}
           <div className={styles.pages}>

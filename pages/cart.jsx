@@ -101,8 +101,8 @@ export default function cartPage() {
       </Head>
       <Header />
       <HeaderBottom />
-      <div>cartPage</div>
-      <div>
+      {/* <div>cartPage</div> */}
+      <div className={styles.content}>
         {history
           .sort((a, b) => b.data().time - a.data().time)
           .map((his, i) => (

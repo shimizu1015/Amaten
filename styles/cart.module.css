@@ -1,19 +1,137 @@
 .container {
-  min-width: 1000px;
+  min-width: 100%;
   min-height: 100vh;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #f4f4f4;
 }
 
+.content {
+  padding-top: 10px;
+}
+
+/* 商品情報のヘッダー */
 .cap {
   display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
 }
 
+.cap img {
+  max-width: 80px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* 商品履歴アイテム */
 .historys {
-  border: 1.5px solid #0f0f0f;
-  padding: 10px;
-  border-radius: 20px;
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid #ddd;
+  padding: 15px;
+
+  border-radius: 12px;
+  margin-bottom: 15px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.historys:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* 商品名、価格、日付のスタイル */
+.historys div {
+  margin-top: 8px;
+}
+
+.historys .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.historys .date {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+.historys button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.historys button:hover {
+  background-color: #c0392b;
+}
+
+/* チェックアウトボタンのスタイル */
+.section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+/* ヘッダー、フッターのデザイン調整 */
+.Header,
+.Footer {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* スマホや小さな画面向けにレスポンシブデザイン */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .cap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cap img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .historys {
+    padding: 10px;
+  }
+
+  .button {
+    width: 100%; /* ボタンを全幅に */
+  }
+
+  .price {
+    font-size: 1rem;
+  }
 }
