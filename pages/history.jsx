@@ -62,7 +62,7 @@ export default function history() {
       <div className={styles.content}>購入履歴</div>
       <div>{name}さん</div>
 
-      <div>
+      <div className={styles.contents}>
         {history
           .sort((a, b) => b.time - a.time)
           .map((his, i) => (

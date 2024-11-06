@@ -1,19 +1,120 @@
+/* コンテナの設定 */
 .container {
-  min-width: 1000px;
+  min-width: 100%; /* 全体幅を100%に */
   min-height: 100vh;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #f4f4f4; /* 背景色を少し明るく */
 }
 
-.cap {
-  display: flex;
+/* ヘッダーとコンテンツのスタイル */
+.content {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #2c3e50;
 }
 
+/* ユーザー名のスタイル */
+.contents {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #34495e;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* 購入履歴アイテム */
 .historys {
-  border: 1.5px solid #0f0f0f;
-  padding: 10px;
-  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid #ddd;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.historys:hover {
+  transform: translateY(-5px); /* ホバー時に少し上に浮かせる */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* ホバー時の影 */
+}
+
+/* 商品名、価格、日付のスタイル */
+.historys .cap {
+  display: flex;
+  align-items: center;
+  gap: 15px;
   margin-bottom: 10px;
+}
+
+.historys .cap img {
+  max-width: 80px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.historys div {
+  margin-top: 8px;
+}
+
+.historys .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e74c3c; /* 価格に赤色を設定 */
+}
+
+.historys .date {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+.historys a {
+  text-decoration: none; /* リンクの下線を消す */
+}
+
+/* フッターのデザイン調整 */
+.Footer {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影 */
+}
+
+/* スマホや小さな画面向けにレスポンシブデザイン */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .content {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .historys {
+    padding: 10px;
+  }
+
+  .historys .cap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .historys .cap img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .historys .price {
+    font-size: 1rem;
+  }
+
+  .historys .date {
+    font-size: 0.8rem;
+  }
 }
