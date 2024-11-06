@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "amaten-6bd8c"
-  }
+    "default": "amaten-6bd8c",
+    "Amaten.com": "amaten-6bd8c"
+  },
+  "targets": {},
+  "etags": {}
 }

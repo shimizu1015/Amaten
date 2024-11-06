@@ -103,7 +103,7 @@ export function LoginForm() {
             <div className={styles.formField}>
               <label className={styles.label}>パスワード</label>
               <input
-                type="text"
+                type="password"
                 placeholder="パスワード"
                 name="password"
                 autoComplete="off"
