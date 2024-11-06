@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.HeaderBottom {
+  /* background-color: #3e536f; */
+  background-color: rgb(5, 105, 236);
+  width: 100%;
+  height: 30px;
+  display: flex;
+}
+
+.nav {
+  color: white;
+  margin-left: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 2px 8px 3px 8px;
+  margin-right: 5px;
+}
+
+.nav:hover {
+  border: 0.7px solid white;
+}

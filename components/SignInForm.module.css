@@ -1,0 +1,135 @@
+@charset "UTF-8";
+.body {
+  background: whitesmoke;
+  overflow-y: hidden;
+  display: block;
+}
+
+.formContainer {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* フォーム自体の高さを調整 で正・負の値を使用することも可能 */
+  /* position: relative;
+  top: 120px;  */
+}
+
+.form {
+  background-color: white;
+  width: 65%;
+  max-width: 500px;
+  min-width: 320px;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid #dfdfdf;
+  box-shadow: 25px 16px 63px -15px #092050;
+  border-radius: 18px;
+  display: block;
+}
+
+.svg {
+  transform: scale(1.2);
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+.h1 {
+  text-align: center;
+  margin-bottom: 10px;
+
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+
+  font-family: "Hiragino Kaku Gothic Pro W3", "Hiragino Kaku Gothic ProN",
+    Meiryo, sans-serif;
+  padding-bottom: 4px;
+  display: block;
+}
+
+.p {
+  margin-top: 0px;
+  font-size: 14px;
+  color: #0098ff;
+  text-align: right;
+  display: block;
+}
+
+.p:hover {
+  text-decoration: underline;
+}
+
+.uiForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  display: block;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input {
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.submitButton {
+  /* background-color: #2977bc; */
+  background-color: #ffd814;
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 30px;
+  color: #871111;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.submitButton:hover {
+  background-color: #f7ca00;
+  /* background-color: #1d629f; */
+}
+
+.errorMsg {
+  color: red;
+  margin: 0;
+  align-self: flex-start;
+  display: block;
+}
+
+.pAccount {
+  text-align: right;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  color: #0098ff;
+}
+
+.pAccount:hover {
+  color: #0170b9;
+}
+
+.fbAlert {
+  color: red;
+  text-align: center;
+}

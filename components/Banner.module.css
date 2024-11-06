@@ -1,0 +1,38 @@
+.container {
+  min-width: 100%;
+}
+
+.Carousel {
+}
+
+.imgDiv {
+  min-width: 100%;
+}
+
+.img {
+  min-width: 100%;
+}
+
+.cardContents {
+  background-color: #e3e6e6;
+}
+
+.row {
+  position: relative;
+  top: -150px;
+  margin: 0 auto;
+  display: table;
+}
+
+.cell {
+  display: table-cell;
+
+  padding: 15px;
+}
+
+.card {
+  background-color: white;
+
+  height: 330px;
+  min-width: 292px;
+}

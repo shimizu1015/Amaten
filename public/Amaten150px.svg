@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<svg width="150" height="50" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <g class="layer">
+  <title>Layer 1</title>
+  <text fill="#0000ff" font-family="Sans-serif" font-size="24" id="svg_1" stroke="#000000" stroke-width="0" text-anchor="middle" transform="matrix(1 0 0 1 0 0) matrix(1.55269 0 0 1.21102 22.3323 -78.4259)" x="34.23" xml:space="preserve" y="89.03">Amaten</text>
+  <rect fill="#FF0000" height="0" id="svg_2" stroke="#000000" width="0" x="83" y="30"/>
+  <path d="m34,38.03c45.17,17.2 95,-5.03 95,-5.03c0,0 -95,5.03 -95,5.03z" fill="#ff00ff" id="svg_6" stroke="#0000ff"/>
+ </g>
+</svg>

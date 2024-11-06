@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+.footer {
+  flex-direction: column;
+  min-height: 430px;
+  width: 100%;
+  height: 35vh;
+  border-top: 1px solid #eaeaea;
+  background-color: #011a53;
+  color: #ddd;
+  flex: 1;
+}
+
+.Contents {
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.MenuTitlesDIV {
+  position: relative;
+  top: 70px; /* フォーム自体の高さを調整 で正・負の値を使用することも可能 */
+  justify-content: center;
+  display: flex;
+  flex: 1;
+}
+
+.left {
+  width: 15%;
+}
+.right {
+  width: 5%;
+}
+
+.MenuTitles {
+  width: 26%;
+}
+
+.MenuTitle {
+  font-size: 24px;
+  font-weight: 450;
+}
+
+.Menus {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Menu {
+  font-size: 16px;
+  font-family: serif;
+}
+
+.Menu:hover {
+}
+
+.HVaside {
+  width: 100%;
+  height: 100px;
+}
+
+.AnothersDiv {
+}
+
+.Anothers {
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  display: flex;
+}
+
+.AnotherFirst {
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: none;
+}
+
+.Another {
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 1px solid #ddd;
+}
+
+.IncDiv {
+  text-align: center;
+}
+
+.Inc {
+}

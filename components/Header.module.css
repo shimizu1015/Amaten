@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+.header {
+  background-color: #faffffff;
+  color: #faffffff;
+  border-bottom: 1px solid #333;
+  /* kon */
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(201, 204, 208, 1) 150px,
+    rgb(0, 49, 113) 150px,
+    rgb(0, 49, 113) 100%
+  );
+  display: flex;
+  width: 100%;
+}
+
+.container {
+}
+
+.headerLogo {
+  transform: scale(0.8);
+
+  padding-top: 5px;
+}
+
+.seachBarDiv {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 3px;
+  max-width: 450px;
+  width: 100%;
+  min-width: 50px;
+}
+
+.seachBar {
+  height: 40px;
+
+  /* background: rgba(200, 200, 200, 0.2); */
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px;
+}
+
+.searchInput {
+  /* background: transparent; */
+  background-color: white;
+
+  flex: 1;
+  border: 0;
+  outline: none;
+  /* padding: 24px 20px; */
+  font-size: 16px;
+  color: gray;
+}
+
+.searchInput::placeholder {
+  color: #c6c7c8ff;
+}
+
+.button {
+  border: 0;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  background: #08cbff;
+  cursor: pointer;
+  transform: scale(0.7);
+  position: relative;
+  left: 10px;
+}
+
+.headerNavDiv {
+  margin: 0 0px 0 auto;
+  display: flex;
+}
+
+.nav0 {
+  margin-top: 7px;
+  min-height: 49px;
+  max-height: 49px;
+  min-width: 150px;
+  max-width: 150px;
+  padding-left: 8px;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.nav1 {
+  margin-top: 7px;
+  min-height: 49px;
+  max-height: 49px;
+  min-width: 150px;
+  max-width: 150px;
+  padding-left: 8px;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.nav2 {
+  text-align: center;
+  margin-top: 7px;
+  min-height: 49px;
+  max-height: 49px;
+  min-width: 95px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-right: 4px;
+}
+
+.nav3 {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+  margin-right: 5px;
+  min-height: 49px;
+  max-height: 49px;
+  min-width: 110px;
+  max-width: 110px;
+  padding-left: 4px;
+}
+
+.cart {
+  width: auto;
+  height: 32px;
+  object-fit: cover;
+}
+
+.cartP {
+  position: relative;
+  top: 8px;
+}
+
+.span {
+  position: relative;
+  text-overflow: ellipsis;
+  color: rgb(254, 189, 105);
+  font-size: 16px;
+  line-height: 20px;
+  top: -12px;
+  right: 72px;
+}
+
+.topP {
+  padding-top: 5px;
+  font-size: 12px;
+  margin: 0;
+  color: white;
+  cursor: pointer;
+}
+
+.botP {
+  font-size: 14px;
+  line-height: 15px;
+  margin: 0;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.nav0:hover,
+.nav1:hover,
+.nav2:hover,
+.nav3:hover {
+  border: 1px solid white;
+  max-height: 45px;
+}
+
+.name {
+  color: #000;
+  font-size: 12px;
+}

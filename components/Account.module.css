@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+.container {
+  display: flex;
+  min-width: 998px;
+  height: 600px;
+  align-items: center;
+}
+
+.aside {
+  width: 25%;
+}
+
+.contents {
+}
+
+.title {
+}
+
+.h1 {
+  font-family: "Hiragino Kaku Gothic Pro W3", "Hiragino Kaku Gothic ProN",
+    Meiryo, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.row {
+  display: flex;
+  display: table-row;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.cell {
+  padding-left: 20px;
+  min-width: 310px;
+  min-height: 100px;
+  display: table-cell;
+}
+
+.card {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.img {
+  height: 100px;
+  transform: scale(0.75);
+}
+
+.cTitle {
+  font-size: 17px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.cCont {
+  margin-top: 10px;
+  font-size: 14px;
+}
