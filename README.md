@@ -27,55 +27,62 @@ test@gmail.com
 test
 
 # 4 amaten　　主な機能の説明
+## ヘッダー
 
+ヘッダーには　検索機能、　「ログイン」への遷移ボタン、　購入履歴遷移ボタン、　カート遷移ボタン　　
+となっており、「ログイン」ボタンはログイン後マイアカウントページ遷移ボタンとなります
 
-# 5 amaten　　詳細な機能の説明
+## マイアカウントページ
 
+このページにはプロフィール設定と、サインアウトボタンがあります　　
+購入履歴に遷移するボタンもあるよ！
 
+## 検索機能
 
+楽天APIより商品情報を取得し、商品一覧画面を出し、商品のクリックすると商品詳細ページ遷移する　　
+商品一覧画面の下にはページの切り機能機能
 
+## 商品詳細ページ
 
+「購入ボタン」　「カートに追加ボタン」　商品の詳細譲歩があります　　
+「購入ボタン」を押すとstripeでのcheckout画面に遷移し、　　
+「カートに追加ボタン」はカートに商品を追加し、ヘッダーのカート数値が増えてるのが確認できます
 
+## カート画面
 
+カートに追加されている商品を確認、削除が行え、クリックすると商品詳細ページに遷移します　
+checkoutボタンを押すと、カートにある商品をすべて購入できます
 
+## 購入履歴
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+購入履歴を確認できます　こちらもクリックすると商品詳細ページに遷移します
 
-## Getting Started
+# 今後の展望
 
-First, run the development server:
+現在は楽天APIのみを用いており、商品情報が楽天市場の物だけですので　　
+Amazonの商品情報も同時に取得し、商品一覧が見れるようにするアグリゲーションサービスとして機能させ、Amazonと楽天を行き来するユーザのニーズにこたえるような製品にしていきたい　
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# 仕様技術
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**言語**
+JS　　
+**フレームワーク**
+next.js　　
+**ユーザー認証、データベース**
+firebase
+**決済システム**
+stripe
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+# 技術的に苦労した点
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+親コンポーネントから子コンポーネントへデータを受け渡す際、null, undefinde ばかりで確認しようとconsole.logを使うも、そもそもデータを取れる前にconsole.logが読まれるためデバックに　　
+ならないやんと思いつつ　見えないところのデータの流れや同期・非同期処理にはかなり苦労しました。　　　
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+stripeやfirebaseを利用する際、公式ドキュメントの見る場所を間違えてたり、そもそもドキュメントに書いてあるコードを、自分のコードに移植する際にどうすればいいのか、
+あまりにも分からない場合は、Qiita zenn などの技術ブログを見るのですが、stripeやfirebaseでは、JSなどのプログラミング言語と違い、頻繁に記述方が変わるため、うまくいかない場合が多く、　　
+結局公式ドキュメントとにらめっこすることになり、苦労しました。　　
+next.jsもfirebaseもstripeも初めての利用で、全体像が全くつかめない中でも開発だったため、公式ドキュメントに苦労したのかなと感じており、このプロジェクトを通して、公式ドキュメントへの抵抗が消
+消えて、しょうもない内容でありますが、自分の成長を感じました。　　
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+問題の解決については、GPTを用いてまず動く答えを見て、実際に動かし、その後　「なぜこのコードで動くのか」を学ぶことによって効率よく学ぶことが出来たと思います。　　
+また、GPTとどれだけ会話を繰り返しても「動くコード」が得られない場合も多く、その際は、GPTを検索力として活用しました、自分の頭の中をすべて伝えたうえで、それに関する記事を求めると高確率で、求めていた情報を書いた技術ブログを得ることができ、うまくAIを活用できた感じております。
