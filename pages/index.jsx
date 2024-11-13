@@ -53,7 +53,7 @@ export default function Home() {
       //qをもとに楽天apiを呼び出す。
       const res = await fetch(
         `https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?applicationId=1056567340057185285
-        &keyword=${q}&hits=27&page=${p}`
+        &keyword=${q}&hits=28&page=${p}`
       );
       console.log(q);
       //返ってきたオブジェクトをjson化してProductDataに入れる。もともとjsonな気もするけど
