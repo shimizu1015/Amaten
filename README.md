@@ -1,3 +1,44 @@
+# 1 amatenのURL
+
+こちらがECのサイトになります。[https://amaten-6bd8c.web.app/](https://amaten-6bd8c.web.app/)
+
+# 2 ログイン機能について
+
+ログインを行うと、購入、購入履歴、カート機能に触れていただけます。
+
+**こちらで登録済みアカンウントこちらです**　　
+test@gmail.com は既に登録済みのメアドですのでログイン可能です。　パスワードは 123456 で設定しております。
+
+アカウント登録についてはメールアドレスとパスワードにより、登録可能で本サイトはメール送信までは行いません
+
+# 3 購入機能について
+
+購入機能の実装にあたってはstripeを利用しており、テストモードでの購入になりますので　購入時に利用するクレジットカード番号等を以下に記載致します
+
+**メールアドレス**  
+test@gmail.com
+
+**カード情報**  
+4242 4242 4242 4242  
+04 / 44  
+444  
+
+**カード保有者の名前**  
+test
+
+# 4 amaten　　主な機能の説明
+
+
+# 5 amaten　　詳細な機能の説明
+
+
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
