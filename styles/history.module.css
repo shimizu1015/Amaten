@@ -84,37 +84,3 @@
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影 */
 }
-
-/* スマホや小さな画面向けにレスポンシブデザイン */
-@media (max-width: 768px) {
-  .container {
-    padding: 0 10px;
-  }
-
-  .content {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .historys {
-    padding: 10px;
-  }
-
-  .historys .cap {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .historys .cap img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .historys .price {
-    font-size: 1rem;
-  }
-
-  .historys .date {
-    font-size: 0.8rem;
-  }
-}
